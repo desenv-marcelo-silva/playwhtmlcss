@@ -9,57 +9,63 @@ breakpoints
   box-sizing: border-box;
 }
 
-body, h1, h2, h3, p, ul {
-    padding: 0;
-    margin: 0;
+body,
+h1,
+h2,
+h3,
+p,
+ul {
+  padding: 0;
+  margin: 0;
 }
 
 body {
-    font-family: Georgia, serif;
-    color: #252525;
+  font-family: Georgia, serif;
+  color: #252525;
 }
 
 /* Menu do site */
 .menu {
-    background: #252525;
-    padding: 20px 0;
+  background: #252525;
+  padding: 20px 0;
 }
 
 .menu-container {
-    max-width: 960px;
-    margin: 0 auto;
+  max-width: 960px;
+  margin: 0 auto;
 }
 
-.menu-container::after, .menu-container::before {
-    content: '';
-    display: table;
-    clear: both;
+.menu-container::after,
+.menu-container::before {
+  content: '';
+  display: table;
+  clear: both;
 }
 
 a.menu-logo {
-    display: block;
-    float: left;
-    margin-left: 10px;
+  display: block;
+  float: left;
+  margin-left: 10px;
 }
 
 nav.menu-nav {
-    float: right;
-    margin-right: 10px;
+  float: right;
+  margin-right: 10px;
 }
 
 .menu-nav li {
-    display: inline-block;
+  display: inline-block;
 }
 
 .menu-nav a {
-    display: block;
-    padding: 10px;
-    text-decoration: none;
-    color: #fff;
-    font-size: 1.125em; /* 18/16 = 1.125 ==> 16 em geral é a base padrão*/
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.125em; /* 18/16 = 1.125 ==> 16 em geral é a base padrão*/
 }
 
-@media only screen and (max-width: 739px) {
+@media (max-width: 739px) {
   .menu-nav {
     float: none;
     clear: both;
@@ -69,30 +75,30 @@ nav.menu-nav {
 /* intro */
 
 main.intro {
-    background: url('../img/bg-intro.jpg') no-repeat center center;
-    background-size: cover;
-    padding: 150px 0;
-    text-align: center;
-    color: #fff;
+  background: url('../img/bg-intro.jpg') no-repeat center center;
+  background-size: cover;
+  padding: 150px 0;
+  text-align: center;
+  color: #fff;
 }
 
 main.intro h1 {
-    text-transform: uppercase;
-    font-size: 3em;
+  text-transform: uppercase;
+  font-size: 3em;
 }
 
 main.intro h1::after {
-    content: '';
-    display: block;
-    width: 20px;
-    height: 4px;
-    background: #fff;
-    margin: 10px auto;
+  content: '';
+  display: block;
+  width: 20px;
+  height: 4px;
+  background: #fff;
+  margin: 10px auto;
 }
 
 main.intro p {
-    font-style: italic;
-    font-size: 1.125em;
+  font-style: italic;
+  font-size: 1.125em;
 }
 
 @media only screen and (max-width: 739px) {
@@ -112,10 +118,11 @@ main.intro p {
   margin: 0 auto;
 }
 
-.sobre-container::after, .sobre-container::before {
-   content: '';
-   display: table;
-   clear: both;
+.sobre-container::after,
+.sobre-container::before {
+  content: '';
+  display: table;
+  clear: both;
 }
 
 .sobre h2 {
@@ -159,7 +166,7 @@ main.intro p {
   max-width: 460px;
 }
 
-@media only screen and (min-width: 740px) and (max-width: 960px) {
+@media (min-width: 740px) and (max-width: 980px) {
   .sobre-container {
     max-width: 720px;
   }
@@ -169,7 +176,7 @@ main.intro p {
   }
 }
 
-@media only screen and (min-width: 739px) {
+@media (max-width: 739px) {
   .sobre-container {
     max-width: 300px;
   }
@@ -194,7 +201,8 @@ main.intro p {
   margin: 0 auto;
 }
 
-.produtos-container::before, .produtos-container::after {
+.produtos-container::before,
+.produtos-container::after {
   content: '';
   clear: both;
   display: table;
@@ -255,6 +263,26 @@ h2.produtos-mineiro::before {
   margin: 20px auto 0 auto;
 }
 
+@media (min-width: 740px) and (max-width: 980px) {
+  .produtos-container {
+    max-width: 720px;
+  }
+
+  .produtos-item {
+    width: 220px;
+  }
+}
+
+@media (max-width: 739px) {
+  .produtos-container {
+    max-width: 300px;
+  }
+
+  .produtos-item {
+    margin: 0 auto 20px auto;
+  }
+}
+
 /* Locais */
 
 .locais {
@@ -268,7 +296,8 @@ h2.produtos-mineiro::before {
   margin: 60px auto;
 }
 
-.locais-item::after, .locais-item::before {
+.locais-item::after,
+.locais-item::before {
   content: '';
   display: table;
   clear: both;
@@ -320,7 +349,8 @@ h2.produtos-mineiro::before {
   margin: 0 auto;
 }
 
-.assine-container::after, .assine-container::before {
+.assine-container::after,
+.assine-container::before {
   content: '';
   display: table;
   clear: both;
@@ -384,7 +414,8 @@ h2.produtos-mineiro::before {
   margin: 0 auto;
 }
 
-.footer-container::after, .footer-container::before {
+.footer-container::after,
+.footer-container::before {
   content: '';
   display: table;
   clear: both;
